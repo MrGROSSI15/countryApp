@@ -2,20 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
     AboutPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    ContactPageComponent,
+    SidebarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     AboutPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    ContactPageComponent,
+    SidebarComponent
   ]
 })
 export class SharedModule { }
